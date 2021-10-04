@@ -1,0 +1,13 @@
+<aside class="bg-dark border-right p-3" id="sidebar">
+  <h2 class="text-light">Gifs App</h2>
+  <hr class="text-light" />
+  <article class="list-group list-reset">
+    <a
+      href="#"
+      (click)="search(item)"
+      *ngFor="let item of history"
+      class="list-group-item list-group-item-action"
+      >{{ item | titlecase }}</a
+    >
+  </article>
+</aside>
